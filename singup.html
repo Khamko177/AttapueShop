@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ອັດຕະປີອອນລາຍ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@100..900&display=swap');
+        body {
+            font-family: 'Noto Sans Lao', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #085d53;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #3592a0;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+        }
+
+        .nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+        footer {
+            background-color: #085d53;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #085d53;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Noto Sans Lao', Arial, sans-serif; /* Áp dụng font cho nút */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>ອັດຕະປີອອນລາຍ</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="sanpham.html">ຫນ້າຫລັກ</a></li>
+            <li><a href="sanpham.html">ສິນຄ້າ</a></li>
+            <li><a href="contact.html">ຕິດຕໍ່</a></li>
+            <li><a href="singin.html">ລົງຊື່ເຂົ້າໃຊ້</a></li>
+            <li><a href="singup.html">ລົງທະບຽນ</a></li>
+            <li><a href="singinadmin.html">ລົງຊື່ຜູ້ດູແລລະບົບ</a></li>
+            <li><a href="cart.html">ກະຕ່າສິນຄ້າ</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="container">
+            <h1>ລົງທະບຽນ</h1>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="full-name">ຊື່ ແລະ ນາມສະກຸນ:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">ຊື່ຜູ້ໃຊ້:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">ອີເມລ:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">ເບີໂທ:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">ລະຫັດຜ່ານ:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="ລົງທະບຽນ">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 ອັດຕະປີອອນລາຍ</p>
+    </footer>
+</body>
+</html>

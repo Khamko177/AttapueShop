@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ອັດຕະປີອອນລາຍ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@100..900&display=swap');
+        body {
+            font-family: 'Noto Sans Lao', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #085d53;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #3592a0;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+        }
+
+        .nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+        footer {
+            background-color: #085d53;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .cart th, .cart td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .cart th {
+            background-color: #085d53;
+            color: #fff;
+        }
+
+        .cart tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .cart tr:hover {
+            background-color: #ddd;
+        }
+
+        .total {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .total span {
+            font-weight: bold;
+        }
+
+        .delete-btn {
+            background-color: #d9534f;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: 'Noto Sans Lao', Arial, sans-serif; /* Áp dụng font cho nút */
+        }
+
+        .delete-btn:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>ອັດຕະປືອອນລາຍ</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="sanpham.html">ຫນ້າຫລັກ</a></li>
+            <li><a href="sanpham.html">ສິນຄ້າ</a></li>
+            <li><a href="contact.html">ຕິດຕໍ່</a></li>
+            <li><a href="singin.html">ລົງຊື່ເຂົ້າໃຊ້</a></li>
+            <li><a href="singup.html">ລົງທະບຽນ</a></li>
+            <li><a href="singinadmin.html">ລົງຊື່ຜູ້ດູແລລະບົບ</a></li>
+            <li><a href="cart.html">ກະຕ່າສິນຄ້າ</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="container">
+            <h1>ກະຕ່າສິນຄ້າ</h1>
+            <table class="cart">
+                <thead>
+                    <tr>
+                        <th>ສິນຄ້າ</th>
+                        <th>ຈຳນວນ</th>
+                        <th>ລາຄາ</th>
+                        <th>ລວມທົງຫມົດ</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ສິນຄ້າ</td>
+                        <td>2</td>
+                        <td>89,000 ກີບ</td>
+                        <td>120.000 ກີບ</td>
+                        <td><button class="delete-btn">ລົບ</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div class="total">
+                <span>ລວມທົງຫມົດ: 120,000ກີບ</span>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <p>© 2024 ອັດຕະປີອອນລາຍ</p>
+    </footer>
+</body>
+</html>
